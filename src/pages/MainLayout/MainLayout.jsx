@@ -17,7 +17,7 @@ const MainLayout = () => {
 
   return (
     <>
-      <NavBar />
+    
       <Outlet />
       <Footer />
     </>
