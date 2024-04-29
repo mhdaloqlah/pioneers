@@ -95,8 +95,28 @@
   }
 
   .ImageHero{
-    width:80%;
+    width:100%;
     position: relative;
+  left: 0;
+  bottom: 0px;
+    
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .app__chef-sign img {
+    width: 80%;
+  }
+
+  .app__wrapper_img img{
+    width: 80%;
+  }
+
+  .ImageHero{
+    width:100%;
+    position: relative;
+  left: 0;
+  bottom: 0px;
     
   }
 }
