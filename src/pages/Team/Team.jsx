@@ -7,11 +7,14 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import HeroCard from "../../components/HeroCard/HeroCard";
 // Import additional images if necessary
 import Gorkie from "../../../public/assets/Gorkie.png";
-import Jibran from "../../../public/assets/Jibran.png";
-import Sarmago from "../../../public/assets/Sarmago.png";
-import Tchikhov from "../../../public/assets/Tchikhov.png";
-import Domas from "../../../public/assets/Domas.png";
-import Hugo from "../../../public/assets/Hugo.png";
+import Fawzi from "../../../public/assets/fawzi2.jpg";
+import MahmoudNour from "../../../public/assets/mohammadnour.jpg";
+import Hasanwehbeh from "../../../public/assets/hasanwehbeh.png";
+import Asmaakeftaro from "../../../public/assets/asmaakeftaro.png";
+import najlaaMotaaa from "../../../public/assets/najlaamotawa.jpg";
+import tamadur from "../../../public/assets/tamadur.png";
+import Saeedali from "../../../public/assets/saeedali.png";
+import Mohammad from "../../../public/assets/mohammad.png";
 import SectionTitle from "../../components/SectionTItle/SectionTitle";
 import Navbar from "../../components/NavBar/NavBar";
 import { Container } from "@mui/material";
@@ -21,7 +24,7 @@ function Team() {
   return (
    
 
-    <Grid sx={{backgroundColor:"#0c0c0c"}}>
+    <Grid sx={{backgroundColor:"#0c0c0c", }}>
       <Grid>
         <Navbar />
       </Grid>
@@ -36,100 +39,101 @@ function Team() {
         }}
       >
         
-        <Grid container columns={{xs: 4, md: 10}} spacing={0}>
+        <Grid container columns={{xs: 4, md: 9}} spacing={0}>
         
           {/* First row of HeroCards */}
-          <Grid item xs={12} container spacing={{xs: 2,md:0}}>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
+          <Grid item sx={{height:"100vh"}} xs={12} container spacing={{xs: 2,md:0}}>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
-                category="رأي"
-                backgroundImage={Gorkie}
+                category="محمد حجازي"
+                backgroundImage={Mohammad}
                 size="30vh"
-                paragraph="الناس الذين يستحقون لقب الإنسان هم أولئك الذين ينذرون أنفسهم وحياتهم من أجل تحطيم القيود"
+                paragraph="م. محمد حجازي"
                 categoryColor="#FF5733"
+                brief="مهندس ورجل أعمال في السعودية والإمارات"
               />
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
-                paragraph="كل ما يوجع النفوس الحساسة في هذا العالم هو سوء التفاهم"
+                paragraph="م. محمد نطفه جي"
+                brief="مهندس ورجل أعمال"
                 category="رأي"
-                backgroundImage={Jibran}
-                size="30vh"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Sarmago}
-                size="30vh"
-                paragraph="​الضمائر تصمت أكثر مما هو مطلوب منها، لهذا ابتُدِعت القوانين"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Tchikhov}
-                size="30vh"
-                paragraph="رأسي مكتظ ، ممتلئ إلى حافته بالأفكار ، و استطيع أن أحس بنبضه و اختلاجاته"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Domas}
-                size="30vh"
-                paragraph="التاريخ هو المسمار الذي أعلق عليه رواياتي"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Hugo}
-                size="30vh"
-                paragraph="دائما ما يلوم الناس الظروف، و لكني لا أؤمن بالظروف"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
-              <HeroCard
-                paragraph="كل ما يوجع النفوس الحساسة في هذا العالم هو سوء التفاهم"
-                category="رأي"
-                backgroundImage={Jibran}
+                backgroundImage={Fawzi}
                 size="30vh"
                 categoryColor="#FF5733"
               />
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
-                paragraph="كل ما يوجع النفوس الحساسة في هذا العالم هو سوء التفاهم"
                 category="رأي"
-                backgroundImage={Jibran}
+                backgroundImage={Hasanwehbeh}
+                size="30vh"
+                paragraph="د. حسن وهبة "
+                brief="رئيس كلية دبي الأمريكية"
+                categoryColor="#FF5733"
+              />
+            </Grid>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
+              <HeroCard
+                category="رأي"
+                backgroundImage={Asmaakeftaro}
+                size="30vh"
+                paragraph="أسماء كفتارو"
+                brief="المدير العام لمؤسسة كفتارو للتسامح في الإمارات"
+                categoryColor="#FF5733"
+              />
+            </Grid>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
+              <HeroCard
+                category="رأي"
+                backgroundImage={najlaaMotaaa}
+                size="30vh"
+                paragraph="نجلاء المطوع"
+                brief="عضو في مجلس رائدات الأعمال الإماراتي"
+                categoryColor="#FF5733"
+              />
+            </Grid>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
+              <HeroCard
+                category="رأي"
+                backgroundImage={tamadur}
+                size="30vh"
+                paragraph="تماضر الفاتح"
+                brief="ماجستير في إدارة الأعمال"
+                categoryColor="#FF5733"
+              />
+            </Grid>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
+              <HeroCard
+                paragraph="د. فوزي الغزالي"
+                brief="دكتوراه في علوم اللسانيات من جامعة أكسفورد في بريطانيا "
+                category="رأي"
+                backgroundImage={Fawzi}
                 size="30vh"
                 categoryColor="#FF5733"
               />
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
+                paragraph="د. محمود نور المنصوري"
+                brief="شاعر وكاتب إماراتي، مدير عام مجلس العويس الثقافي "
                 category="رأي"
-                backgroundImage={Sarmago}
+                backgroundImage={MahmoudNour}
                 size="30vh"
-                paragraph="​الضمائر تصمت أكثر مما هو مطلوب منها، لهذا ابتُدِعت القوانين"
                 categoryColor="#FF5733"
               />
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={2}>
+            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
                 category="رأي"
-                backgroundImage={Tchikhov}
+                backgroundImage={Saeedali}
                 size="30vh"
-                paragraph="رأسي مكتظ ، ممتلئ إلى حافته بالأفكار ، و استطيع أن أحس بنبضه و اختلاجاته"
+                paragraph="د. سعيد يوسف آل علي"
+                brief="دكتور في الاقتصاد وعلوم الإدارة"
                 categoryColor="#FF5733"
               />
             </Grid>
+          
           </Grid>
 
           

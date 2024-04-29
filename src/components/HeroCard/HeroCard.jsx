@@ -13,16 +13,19 @@ const HeroCard = ({
   categoryColor,
   categoryFontColor,
   backgroundParagaphColor,
-  paragraphWidth
+  paragraphWidth,
+  brief
 }) => {
   // Custom styles for the card and its elements
   const cardStyles = {
     position: "relative",
     width: "100%", // Make the card responsive
-    height: 300, // Default height, can be adjusted or made responsive
+    height: 600, // Default height, can be adjusted or made responsive
     //   backgroundImage: (props) => `url(${props.backgroundImage})`, // Use props to change the background image
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end", // Align content to the bottom
@@ -85,6 +88,20 @@ const HeroCard = ({
     width: paragraphWidth,
     
   };
+
+  const briefStyles = {
+    color: "rgba(255, 255, 255, 0.73)", // Set the text color to white using RGBA
+    marginTop: "0.1rem", // Margin top for spacing from the title
+    fontSize: "1.0rem", // Font size for the paragraph
+    whiteSpace: "normal", // Allows the text to wrap
+    fontWeight: "bold",
+    right: 0, // Align to the right
+    backgroundColor:backgroundParagaphColor,
+    textAlign: "right", // Align text to the right
+    textOverflow: "ellipsis", // Add ellipsis if text is too long
+    width: paragraphWidth,
+    
+  };
   // Card component
   return (
     <Card
@@ -114,6 +131,8 @@ const HeroCard = ({
           {title}
         </Typography>
         {paragraph && <Typography sx={paragraphStyles}>{paragraph}</Typography>}
+        {brief && <Typography sx={briefStyles}> {brief}</Typography>}
+
       </CardContent>
     </Card>
   );
