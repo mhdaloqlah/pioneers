@@ -17,7 +17,7 @@ import Navbar from "../../components/NavBar/NavBar";
 import { Container } from "@mui/material";
 
 
-function PioneersList() {
+function Team() {
   return (
    
 
@@ -144,4 +144,4 @@ function PioneersList() {
   )
 }
 
-export default PioneersList
+export default Team

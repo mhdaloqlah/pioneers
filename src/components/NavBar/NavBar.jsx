@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href="#faqs">FAQS</a>
         </li>
         <li className="p__opensans">
-          <a href="#team">Team</a>
+          <a href="team">Team</a>
         </li>
         <li className="p__opensans">
           <a href="#support">Support</a>
