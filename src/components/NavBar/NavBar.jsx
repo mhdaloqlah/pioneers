@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#gulfnews">GulfNews</a>
+          <a href="#gulfnews">UAE News</a>
         </li>
         <li className="p__opensans">
           <a href="#superseries">SuperSeries</a>
@@ -23,13 +23,13 @@ const Navbar = () => {
           <a href="#gallery">Gallery</a>
         </li>
         <li className="p__opensans">
-          <a href="#aboutus">About us</a>
+          <a href="aboutus">About us</a>
         </li>
         <li className="p__opensans">
           <a href="#faqs">FAQS</a>
         </li>
         <li className="p__opensans">
-          <a href="#team">Team</a>
+          <a href="team">Team</a>
         </li>
         <li className="p__opensans">
           <a href="#support">Support</a>
@@ -51,8 +51,8 @@ const Navbar = () => {
             />
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#gulfnews" onClick={() => setToggleMenu(false)}>
-                  GulfNews
+                <a href="#uaenews" onClick={() => setToggleMenu(false)}>
+                  UAE News
                 </a>
               </li>
               <li>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#aboutus" onClick={() => setToggleMenu(false)}>
+                <a href="aboutus" onClick={() => setToggleMenu(false)}>
                   About us
                 </a>
               </li>
