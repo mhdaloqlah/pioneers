@@ -59,12 +59,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#team" onClick={() => setToggleMenu(false)}>
+                <a href="team" onClick={() => setToggleMenu(false)}>
                   Team
                 </a>
               </li>
               <li>
-                <a href="#uaenews" onClick={() => setToggleMenu(false)}>
+                <a href="/uaenews" onClick={() => setToggleMenu(false)}>
                   UAE News
                 </a>
               </li>

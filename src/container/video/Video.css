@@ -1,5 +1,10 @@
+.video-grid-item {
+  height: 300px; /* Limiting height */
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
 .app__video {
-  height: 100vh;
+  height: 100%; /* Instead of 100vh, use 100% to fill the parent container */
   position: relative;
 }
 

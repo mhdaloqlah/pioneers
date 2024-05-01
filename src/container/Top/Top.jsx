@@ -30,7 +30,7 @@ const cards = [
   },
   {
     image: creator,
-    title: "Business Men",
+    title: "Business People",
     text: "A timeless creation of black and white lace, this dress weaves together classic elegance and contemporary design. The embodiment of grace for the fashion-forward woman.",
   },
 ];
@@ -54,8 +54,9 @@ const Top = () => {
                 sx={{
                   backgroundColor: "inherit",
                   border: '0',
-                  borderShadow: "none",
+                  boxShadow: "none",
                   borderStyle: "none",
+                  fontFamily:"Oswald, sans-serif"
                   
                 }}
               >
@@ -68,22 +69,23 @@ const Top = () => {
                     sx={{
                       objectFit: "contain",
                       border: 0,
-                      borderShadow: "none",
+                      boxShadow: "none",
+                      fontFamily:"Oswald, sans-serif"
                     }}
                   />
-                  <CardContent sx={{ border: 0, boxShadow: "none" }}>
+                  <CardContent sx={{ border: 0, boxShadow: "none" , fontFamily:'Oswald,sans-serif'}}>
                     <Typography
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#dcca87", textAlign: "center" }}
+                      sx={{ color: "#dcca87", textAlign: "center" ,fontFamily:"Oswald, sans-serif"}}
                     >
                       {card.title}
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ textAlign: "center", color: "#b5964d" }}
+                      sx={{ textAlign: "center", color: "#b5964d",fontFamily:"Oswald, sans-serif" }}
                     >
                       {card.text}
                     </Typography>
@@ -98,7 +100,7 @@ const Top = () => {
                     boxShadow: "none",
                   }}
                 >
-                  <button className="custom__button">See More</button>
+                  <Button sx={{backgroundColor:'#b5964d', color:'white',fontFamily:"Oswald, sans-serif"}}>See More</Button>
                 </Box>
               </Card>
             </Grid>
