@@ -11,8 +11,8 @@ import { Container, Typography } from "@mui/material";
 const Faqs = () => {
   return (
     <section className="faqs__section section__padding  " id="faqs">
-      <Container sx={{ paddingTop: "20px" }}>
-      <Typography variant="h3" gutterBottom sx={{color: "#b5964dc8", fontFamily:"Oswald, sans-serif"}}>
+      <Container sx={{ paddingTop: "20px", direction:"rtl" }}>
+      <Typography variant="h3" gutterBottom sx={{color: "#b5964dc8", fontFamily:"Oswald, sans-serif",direction:"ltr"}}>
         FAQS
       </Typography>
         <Accordion defaultExpanded sx={{ backgroundColor: "inherit", color: "#b5964dc8", boxShadow: "none" }}>
