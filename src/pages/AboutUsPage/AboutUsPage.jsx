@@ -10,7 +10,7 @@ const AboutUsPage = () => {
     <Box
       sx={{
         backgroundColor: "#0c0c0c",
-        height: { xs: "100vh", md: "100vh" },
+        height: { xs: "auto", md: "auto" },
       }}
     >
       <Grid>
@@ -21,7 +21,7 @@ const AboutUsPage = () => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Grid container spacing={2}>
-                <Grid item md={6} xs={12}>
+                <Grid item md={3} xs={12}>
                   <Typography
                     variant="h3"
                     component="h1"
@@ -34,28 +34,60 @@ const AboutUsPage = () => {
                     About Us
                   </Typography>
                 </Grid>
-                <Grid item md={6} xs={12}>
+                <Grid sx={{padding:'25px'}} item md={9} xs={12}>
                   <Typography
                     variant="body1"
                     sx={{
                       color: "#B5964D",
                       fontFamily: "Oswald",
                       marginLeft: { xs: "1rem", md: "6rem" },
+                      textAlign:"justify",
+                      fontSize:"18px",
+                      direction:'rtl'
                     }}
                   >
-                    We are pleased to showcase a wide range of artists from
-                    around the world who use a variety of mediums such as
-                    painting, sculpture, photography and mixed media to create
-                    thought-provoking and visually stunning pieces. Each exhibit
-                    is carefully curated to challenge and engage our visitors
-                    with topics ranging from social commentary and political
-                    activism to personal stories and abstract expressions. Our
-                    gallery space is designed to enhance the viewing experience,
-                    with ample natural light, spacious rooms, and clean lines
-                    that draw attention to the artwork. Whether you're an avid
-                    art collector or simply a connoisseur of contemporary art,
-                    our gallery offers a dynamic and immersive experience that's
-                    sure to inspire and captivate.
+ مركز الدراسات لبحوث التنمية مؤسسة واعدة انطلقت من مدينة الشارقة للكتاب 2019م وهي تعمل وفق القوانين الاتحادية لتنظيم البحث العلمي والنشر والإعلام، وقد تم تجديد ترخيصها بقرار حكومة الشارقة – مدينة الشارقة للنشر رقم  4205096   2023 ويتوفر في هيئتها الاستشارية عدد من الباحثين والمحللين الاقتصاديين والاجتماعيين.
+ وهي تعمل بالتنسيق مع دائرة التنمية الاقتصادية في إمارة الشارقة وتهدف إلى دعم المنجرات التنموية في سائر المجالات  التي تتحقق باستمرار على أرض الإمارات.
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "#B5964D",
+                      fontFamily: "Oswald",
+                      marginLeft: { xs: "1rem", md: "6rem" },
+                      textAlign:"center",
+                      fontWeight:"800",
+                      direction:'rtl',
+                      marginTop:'25px',
+                      marginBottom:'25px',
+                      fontSize:"18px",
+                    }}
+                  >
+                 أهلاً بكم في موقع 100 سيريان بايونيرز في الإمارات
+                  </Typography>
+
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: "#B5964D",
+                      fontFamily: "Oswald",
+                      marginLeft: { xs: "1rem", md: "6rem" },
+                      textAlign:"justify",
+                      fontSize:"18px",
+                      direction:'rtl'
+                    }}
+                  >
+يتشرف مركز الدراسات لبحوث التنمية في الإمارات بتقديم الإطلاق الجديد لأهم مائة شخصية سورية أسهمت في تطوير الإمارات منذ قيام الاتحاد إلى اليوم.
+<br />
+تشكل الإمارات أوضح ظاهرة حضارية للفعل العربي والإسلامي على مستوى العالم، فقد توفرت لهذا البلد الكريم قيادة راشدة وقوانين بصيرة وإدارة منفتحة تمكنت في فترة قياسية من تحقيق تطور حضاري لافت حظي بإعجاب سائر الشعوب وبات الوصول إلى الإمارات والإسهام في نهضتها حلماً يراود كل ذي إرادة طموحة وعقل واثب وجيل واعد. 
+<br />
+ومنذ قيام الاتحاد أعلن الوالد الشيخ زايد أن الإمارات ملتقى للطموح والعطاء، وأعلن أن الإمارات تحتاج في نهضتها وقيامها إلى أحدث الخبرات والتجارب من كل شعوب العالم، وعمل على توفير فرص النجاح والتفوق للمواطنين كذلك للوافدين من أبناء الجنسيات المختلفة، واستقرت كلماته المضيئة مرشدة وهادية في الضمير الإماراتي: المال مال الله والكل عباد الله، ولكل مجتهد نصيب.
+<br />
+وحين أبدى بعض مستشاريه قلقاً من حضور الأجنبي في الدولة وأن شركات كبرى تملك وتتطور وتربح على أرض الإمارات لمالكين من غير الإمارات، وأن كثيراً من الأبراج والمصانع الكبيرة على أرض الدولة باتت لمالكين غير إماراتيين، ضحك بعفويته المعروفة، ثم قال: وهل تظنون أنهم سيأخذون هذه الأبراج والمصانع معهم إذا أرادوا الرحيل؟ إنها إرث حضاري ومجتمعي لأهل الإمارات، وهي لهذا البلد ولمن يعيش فيه إلى يوم القيامة.
+<br />
+وجاءت الأيام بتحقيق بصيرة الشيخ زايد وتطورت البلاد بشكل كبير واشترك الكل في عمرانها، وبعد نصف قرن من قيام الاتحاد تحولت تلك الأرض القاحلة إلى جنات تجري من تحتها الأنهار، وصارت مصدر إلهام لكل التجارب الناجحة في الأرض، وتصدرت المراكز المتقددمة على المؤشرات العالمية في جودة الحياة والأمن الاجتماعي ونسب النمو  والتلاحم المجتمعي.
+<br />
+وفي سياق التعرف على الإرادات الخيرة التي كانت وراء هذه النجاحات فإن مركز الدراسات لبحوث التنمية في إمارة الشارقة يمضي في اتخاذ خطوة ذات دلالة وهي التعريف بأهم الرواد الذين أسهموا في تحقيق هذا التطور في الإمارات، وقد اختارت الهيئة الاستشارية للمركز التعريف بأهم مائة أسهموا في تطور الإمارات من كل جنسية من الحنسيات الموجودة في الدولة، ولا شك أن بناء الإمارات قام على أكتاف أهلها الخيرين الطيبية وشاركهم في ذلك الخليجيون والعرب والدول الرائدة في آسيا وأوروبا وأفريقيا وأمريكا.
                   </Typography>
                 </Grid>
               </Grid>

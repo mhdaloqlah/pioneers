@@ -13,24 +13,27 @@ const Navbar = () => {
         <img src={Logo} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans">
-          <a href="#gulfnews">UAENews</a>
+      <li className="p__opensans">
+          <a href="aboutus">About us</a>
         </li>
         <li className="p__opensans">
-          <a href="#superseries">SuperSeries</a>
+          <a href="team">Team</a>
         </li>
         <li className="p__opensans">
-          <a href="#gallery">Gallery</a>
+          <a href="#gulfnews">UAE News</a>
         </li>
         <li className="p__opensans">
-          <a href="#aboutus">About us</a>
+          <a href="#superseries">100 Pioneers List</a>
         </li>
         <li className="p__opensans">
           <a href="#faqs">FAQS</a>
         </li>
         <li className="p__opensans">
-          <a href="team">Team</a>
+          <a href="#gallery">Gallery</a>
         </li>
+        
+       
+      
         <li className="p__opensans">
           <a href="#support">Support</a>
         </li>
@@ -50,24 +53,24 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <ul className="app__navbar-smallscreen_links">
+            <li>
+                <a href="aboutus" onClick={() => setToggleMenu(false)}>
+                  About us
+                </a>
+              </li>
               <li>
-                <a href="#gulfnews" onClick={() => setToggleMenu(false)}>
-                 UAENews
+                <a href="#team" onClick={() => setToggleMenu(false)}>
+                  Team
+                </a>
+              </li>
+              <li>
+                <a href="#uaenews" onClick={() => setToggleMenu(false)}>
+                  UAE News
                 </a>
               </li>
               <li>
                 <a href="#superseries" onClick={() => setToggleMenu(false)}>
-                  SuperSeries
-                </a>
-              </li>
-              <li>
-                <a href="#gallery" onClick={() => setToggleMenu(false)}>
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a href="#aboutus" onClick={() => setToggleMenu(false)}>
-                  About us
+                  100 Pioneers List 
                 </a>
               </li>
               <li>
@@ -76,10 +79,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#team" onClick={() => setToggleMenu(false)}>
-                  Team
+                <a href="#gallery" onClick={() => setToggleMenu(false)}>
+                  Gallery
                 </a>
               </li>
+              
+              
+             
               <li>
                 <a href="#support" onClick={() => setToggleMenu(false)}>
                   Support
