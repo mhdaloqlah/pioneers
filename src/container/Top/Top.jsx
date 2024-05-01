@@ -30,7 +30,7 @@ const cards = [
   },
   {
     image: creator,
-    title: "Business Men",
+    title: "Business People",
     text: "A timeless creation of black and white lace, this dress weaves together classic elegance and contemporary design. The embodiment of grace for the fashion-forward woman.",
   },
 ];
@@ -52,7 +52,7 @@ const Top = () => {
                 sx={{
                   backgroundColor: "transparent",
                   border: 0,
-                  borderShadow: "none",
+                  boxShadow: "none",
                   borderStyle: "none",
                 }}
               >
@@ -65,7 +65,7 @@ const Top = () => {
                     sx={{
                       objectFit: "contain",
                       border: 0,
-                      borderShadow: "none",
+                      boxShadow: "none",
                     }}
                   />
                   <CardContent sx={{ border: 0, boxShadow: "none" }}>
@@ -73,14 +73,22 @@ const Top = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#dcca87", textAlign: "center" }}
+                      sx={{
+                        color: "#dcca87",
+                        textAlign: "center",
+                        fontFamily: "Oswald",
+                      }}
                     >
                       {card.title}
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ textAlign: "center", color: "#b5964d" }}
+                      sx={{
+                        textAlign: "center",
+                        color: "#b5964d",
+                        fontFamily: "Oswald",
+                      }}
                     >
                       {card.text}
                     </Typography>
@@ -95,7 +103,16 @@ const Top = () => {
                     boxShadow: "none",
                   }}
                 >
-                  <button className="custom__button">See More</button>
+                  <Button
+                    className="custom__button"
+                    sx={{
+                      backgroundColor: "#B5964D",
+                      color: "white",
+                      fontFamily: "Oswald",
+                    }}
+                  >
+                    See More
+                  </Button>
                 </Box>
               </Card>
             </Grid>

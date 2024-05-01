@@ -7,12 +7,13 @@ import Video from "../../container/video/Video";
 import FAQs from "../../container/FAQS/FAQs";
 import Container from "@mui/material/Container";
 import Pioneers from "../../container/Pioneers/Pioneers";
+import VideoGrid from "../../container/video/VideoGrid";
 
 const HomePage = () => (
   <>
     <Hero />
     <Top />
-    <Video />
+    <VideoGrid />
     <Pioneers />
     <FAQs />
   </>
