@@ -63,7 +63,7 @@ const Top = () => {
                 <CardActionArea sx={{ border: 0, boxShadow: "none" }}>
                   <CardMedia
                     component="img"
-                    height="500"
+                    height="400"
                     image={card.image}
                     alt={card.title}
                     sx={{

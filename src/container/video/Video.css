@@ -1,5 +1,5 @@
 .video-grid-item {
-  height: 300px; /* Limiting height */
+  height: 25vh; /* Limiting height */
   overflow: hidden; /* Prevents content from spilling out */
 }
 

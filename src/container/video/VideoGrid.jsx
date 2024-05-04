@@ -6,15 +6,7 @@ const VideoGrid = () => {
   return (
     <Grid container spacing={2} className="Grid">
       {/* Top row */}
-      <Grid item xs={4} sm={4} md={4} className="video-grid-item">
-        <Video />
-      </Grid>
-      <Grid item xs={4} sm={4} md={4} className="video-grid-item">
-        <Video />
-      </Grid>
-      <Grid item xs={4} sm={4} md={4} className="video-grid-item">
-        <Video />
-      </Grid>
+     
 
       {/* Center item */}
       <Grid
@@ -23,7 +15,7 @@ const VideoGrid = () => {
         sm={12}
         md={12}
         className="video-grid-item-large"
-        style={{ height: "100vh" }}
+        style={{ height: "70vh" }}
       >
         <Video />
       </Grid>

@@ -31,7 +31,7 @@ const Footer = () => (
         <img src={Logo} alt="footer_logo" />
         <p className="p__opensans">
           &quot;The best way to find yourself is to lose yourself in the service
-          of others.&quot;
+          of others&quot;
         </p>
         <RiVipDiamondFill
           color="#b5964d"

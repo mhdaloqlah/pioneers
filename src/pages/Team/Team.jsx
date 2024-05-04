@@ -42,7 +42,7 @@ function Team() {
         <Grid container columns={{xs: 4, md: 9}} spacing={0}>
         
           {/* First row of HeroCards */}
-          <Grid item sx={{height:"100vh"}} xs={12} container spacing={{xs: 2,md:0}}>
+          <Grid item sx={{height:{md:"100vh",sx:"auto"}}} xs={12} container spacing={{xs: 2,md:0}}>
             <Grid sx={{padding:"5px"}} item xs={12} md={3}>
               <HeroCard
                 category="محمد حجازي"

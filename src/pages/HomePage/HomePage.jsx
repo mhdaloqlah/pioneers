@@ -8,14 +8,16 @@ import FAQs from "../../container/FAQS/FAQs";
 import Container from "@mui/material/Container";
 import Pioneers from "../../container/Pioneers/Pioneers";
 import VideoGrid from "../../container/video/VideoGrid";
-
+import ControlledAccordions from "../../container/FAQS/FAQs";
 const HomePage = () => (
   <>
     <Hero />
     <Top />
     <VideoGrid />
     <Pioneers />
-    <FAQs />
+    {/* <FAQs /> */}
+    <ControlledAccordions/>
+
   </>
 );
 
