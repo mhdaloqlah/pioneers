@@ -30,6 +30,7 @@ const HeroCard = ({
     flexDirection: "column",
     justifyContent: "flex-end", // Align content to the bottom
     cursor: "pointer",
+    backgroundColor:'#0c0c0c'
     
   };
 
@@ -39,7 +40,7 @@ const HeroCard = ({
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)", // Black overlay with opacity
+    // backgroundColor: "rgba(0, 0, 0, 0.5)", // Black overlay with opacity
   };
 
   const categoryTagStyles = {

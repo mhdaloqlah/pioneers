@@ -40,9 +40,16 @@ const Top = () => {
     <Box
       className="top__section app__wrapper"
       id="top"
-      sx={{ height: { xs: "auto", md: "100vh" } }}
+      sx={{ height: { xs: "auto", md: "100vh" },
+      padding: '0 20px', 
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundImage:`url(${layout})`,
+      backgroundRepeat:'no-repeat'
+    }}
+     
     >
-      <img src={layout} alt="layout" className="layout__image" />
+      {/* <img src={layout} alt="layout" className="layout__image" /> */}
       <div className="app__wrapper_info">
         <h1 className="headtext__cormorant">Top</h1>
         <Grid sx={{ boxShadow:'none'}} container spacing={0}>

@@ -9,8 +9,11 @@ import Container from "@mui/material/Container";
 import Pioneers from "../../container/Pioneers/Pioneers";
 import VideoGrid from "../../container/video/VideoGrid";
 import ControlledAccordions from "../../container/FAQS/FAQs";
+import NavBar from "../../components/NavBar/NavBar";
+
 const HomePage = () => (
   <>
+    
     <Hero />
     <Top />
     <VideoGrid />

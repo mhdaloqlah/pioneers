@@ -14,6 +14,14 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { alpha, styled } from '@mui/material/styles';
 
+import Popover from '@mui/material/Popover';
+import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
+import Popper from '@mui/material/Popper';
+import Fade from '@mui/material/Fade';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import { Button } from "@mui/material";
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -187,7 +195,18 @@ const Navbar = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
- 
+
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openTeam, setOpenTeam] = React.useState(false);
+  const [placement, setPlacement] = React.useState();
+
+  const handleClickTeam = (newPlacement) => (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpenTeam((prev) => !prev);
+    setPlacement(newPlacement);
+  };
+
   return (
     <nav className="app__navbar">
 
@@ -208,8 +227,52 @@ const Navbar = () => {
         <li className="p__opensans">
           <a href="#gallery">Gallery</a>
         </li>
-        <li className="p__opensans">
-          <a href="team">Team</a>
+        <li  onMouseEnter={handleClickTeam('bottom')}  onMouseLeave={handleClickTeam('bottom')} className="p__opensans">
+
+          <a  >Team</a>
+          <Popper
+            // Note: The following zIndex style is specifically for documentation purposes and may not be necessary in your application.
+            sx={{ zIndex: 1200 }}
+            open={openTeam}
+            anchorEl={anchorEl}
+            placement={placement}
+            transition
+          
+           
+          >
+            {({ TransitionProps }) => (
+              <Fade {...TransitionProps} timeout={350}>
+                <Paper>
+                  <Typography sx={{
+                    p: 2, 
+                    backgroundColor: '#0c0c0c',
+                    border: '1px solid #b5964dc8',
+                    
+
+                  }}>
+                    <Stack spacing={2}>
+                      <Button sx={{
+                        color: '#b5964dc8',
+                        fontFamily: 'Oswald, sans-serif',
+                        ":hover": {
+                          color: 'white'
+                        }
+                      }} href="team">Center Team</Button>
+                      <Button sx={{
+                        color: '#b5964dc8',
+                        fontFamily: 'Oswald, sans-serif',
+                        ":hover": {
+                          color: 'white'
+                        }
+                      }} href="Teamadvisory">Advisory Body</Button>
+
+                    </Stack>
+                  </Typography>
+                </Paper>
+              </Fade>
+            )}
+          </Popper>
+
         </li>
         <li className="p__opensans">
           <a href="#faqs">FAQS</a>
@@ -228,7 +291,7 @@ const Navbar = () => {
         </li>
 
         <li className="p__opensans">
-          <SearchIcon onClick={handleOpen} />
+          <SearchIcon sx={{fontSize:'32px'}} onClick={handleOpen} />
         </li>
       </ul>
 
@@ -267,9 +330,49 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="team" onClick={() => setToggleMenu(false)}>
-                  Team
-                </a>
+              <a onClick={handleClickTeam('bottom')}>Team</a>
+          <Popper
+            // Note: The following zIndex style is specifically for documentation purposes and may not be necessary in your application.
+            sx={{ zIndex: 1200 }}
+            open={openTeam}
+            anchorEl={anchorEl}
+            placement={placement}
+            transition
+          >
+            {({ TransitionProps }) => (
+              <Fade {...TransitionProps} timeout={350}>
+                <Paper>
+                  <Typography sx={{
+                    p: 2, 
+                    backgroundColor: '#0c0c0c',
+                    border: '1px solid #b5964dc8',
+                    
+
+                  }}>
+                    <Stack spacing={2}>
+                      <Button sx={{
+                        color: '#b5964dc8',
+                        fontFamily: 'Oswald, sans-serif',
+                        ":hover": {
+                          color: 'white'
+                        }
+                      }} onClick={() => setToggleMenu(false)} href="team">Center Team</Button>
+                      <Button sx={{
+                        color: '#b5964dc8',
+                        fontFamily: 'Oswald, sans-serif',
+                        ":hover": {
+                          color: 'white'
+                        }
+                      }} href="Teamadvisory">Advisory Body</Button>
+
+                    </Stack>
+                  </Typography>
+                </Paper>
+              </Fade>
+            )}
+          </Popper>
+
+                
               </li>
               <li>
                 <a href="#faqs" onClick={() => setToggleMenu(false)}>
@@ -332,29 +435,29 @@ const Navbar = () => {
               sx={{ textAlign: 'center' }}
               renderInput={(params) => (
 
-                <CssTextField variant="standard" {...params} label="SEARCH" id="custom-css-outlined-input" 
-                InputProps={{
-                  ...params.InputProps,
-                  type: 'search',
-                  style: {
-                    color: 'white',
-                    textAlign: 'center',
-                    fontSize: '50px',
-                    fontFamily: 'Oswald, sans-serif'
+                <CssTextField variant="standard" {...params} label="SEARCH" id="custom-css-outlined-input"
+                  InputProps={{
+                    ...params.InputProps,
+                    type: 'search',
+                    style: {
+                      color: 'white',
+                      textAlign: 'center',
+                      fontSize: '50px',
+                      fontFamily: 'Oswald, sans-serif'
 
-                  }
+                    }
 
-                }}/>
-              
+                  }} />
+
               )}
             />
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2, color: "white" }}>
-         
+
           </Typography>
           <Box>
-         
-      
+
+
           </Box>
         </Box>
       </Modal>

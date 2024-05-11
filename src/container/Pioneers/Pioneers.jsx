@@ -7,14 +7,15 @@ const Pioneers = () => {
     <Box
       className="top__section app__wrapper"
       id="pioneers"
-      sx={{ width: "100%", height: "100vh", p: 2 }}
+      sx={{ width: "100%", height: "100vh", p: 2 , justifyContent: 'center',
+      alignItems: 'center',}}
     >
       <Grid
         container
         spacing={2}
         sx={{ width: "100%", height: "100%", position: "relative" }}
       >
-        <h1 className="headtext__cormorant">Pioneers</h1>
+        <h1 className="headtext__cormorant" style={{marginTop:"50px"}}>Pioneers</h1>
 
         <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
           <CardMedia

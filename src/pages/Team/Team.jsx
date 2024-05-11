@@ -15,134 +15,131 @@ import najlaaMotaaa from "../../../public/assets/najlaamotawa.jpg";
 import tamadur from "../../../public/assets/tamadur.png";
 import Saeedali from "../../../public/assets/saeedali.png";
 import Mohammad from "../../../public/assets/mohammad.png";
+import habash from "../../../public/assets/Mohammad.Habash.png";
+import mhd from "../../../public/assets/mhd.png";
+import sami from "../../../public/assets/sami.png";
+import malek from "../../../public/assets/malek.jpg";
+import safwan from "../../../public/assets/safwan.png";
+import sedra from "../../../public/assets/sedra.png";
+
 import SectionTitle from "../../components/SectionTItle/SectionTitle";
 import Navbar from "../../components/NavBar/NavBar";
 import { Container } from "@mui/material";
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Teamcard from "../../components/TeamCard/Teamcard";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import Socials from "../../components/socials/Socials";
 
 
 function Team() {
   return (
-   
 
-    <Grid sx={{backgroundColor:"#0c0c0c", }}>
+
+    <Grid sx={{ backgroundColor: "#0c0c0c", position: 'relative' }}>
       <Grid>
+        <Socials />
         <Navbar />
       </Grid>
-      <SectionTitle sectionName="TEAM" />
-
+      <SectionTitle sectionName="MEET" />
+      <SectionTitle sectionName="CENTER TEAM OF 100 SYRIAN PIONEERS" />
       <Box
         id="opinion"
         sx={{
           flexGrow: 1,
           marginTop: "1rem",
-          
+
         }}
       >
-        
-        <Grid container columns={{xs: 4, md: 9}} spacing={0}>
-        
+
+        <Grid container spacing={0}>
+
           {/* First row of HeroCards */}
-          <Grid item sx={{height:{md:"100vh",sx:"auto"}}} xs={12} container spacing={{xs: 2,md:0}}>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="محمد حجازي"
+          <Grid item sx={{ height: { md: "auto", sx: "auto" } }} xs={12} container spacing={{ xs: 2, md: 0 }}>
+           
+
+            <Grid spacing={4} container columns={10}>
+            <Grid item xs={12} md={2}>
+              </Grid>
+            <Grid item xs={12} md={3}>
+              <Teamcard
+                name="م. محمد حجازي"
+                brief="  مهندس ورجل أعمال في السعودية والإمارات"
                 backgroundImage={Mohammad}
-                size="30vh"
-                paragraph="م. محمد حجازي"
-                categoryColor="#FF5733"
-                brief="مهندس ورجل أعمال في السعودية والإمارات"
+                Imageheight="300px"
+                ImageWidth="300px"
+              />
+
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Teamcard
+                name="د. محمد حبش"
+                brief="عالم ومفكر إسلامي وبرلماني وأكاديمي من سوريا"
+                backgroundImage={habash}
+                Imageheight="300px"
+                ImageWidth="300px"
               />
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                paragraph="م. محمد نطفه جي"
-                brief="مهندس ورجل أعمال"
-                category="رأي"
-                backgroundImage={Fawzi}
-                size="30vh"
-                categoryColor="#FF5733"
-              />
+            <Grid item xs={12} md={2}>
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Teamcard
+                  name="م.مالك معتوق"
+                  brief="مدير التحرير"
+                  Imageheight="170px"
+                  ImageWidth="170px"
+
+                  backgroundImage={malek} />
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Teamcard
+                  name="م. صفوان مدخنة"
+                  brief="مدير شركة تناغم للبرمجيات"
+                  Imageheight="170px"
+                  ImageWidth="170px"
+
+                  backgroundImage={safwan} />
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Teamcard
+                  name="م. محمد العقلة"
+                  brief="رئيس قسم البرمجيات في شركة تناغم"
+                  Imageheight="170px"
+                  ImageWidth="170px"
+
+                  backgroundImage={mhd}
+                  direction="rtl" />
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Teamcard
+                  name="م. سامي اسكندراني"
+                  brief="رئيس قسم التصميم في شركة تناغم"
+                  Imageheight="170px"
+                  ImageWidth="170px"
+
+                  backgroundImage={sami} />
+              </Grid>
+              <Grid item xs={12} md={2}>
+                <Teamcard
+                  name="م. سدره مهنا"
+                  brief="مطورة برمجيات في شركة تناغم"
+                  Imageheight="170px"
+                  ImageWidth="170px"
+
+                  backgroundImage={sedra} />
+              </Grid>
             </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Hasanwehbeh}
-                size="30vh"
-                paragraph="د. حسن وهبة "
-                brief="رئيس كلية دبي الأمريكية"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Asmaakeftaro}
-                size="30vh"
-                paragraph="أسماء كفتارو"
-                brief="المدير العام لمؤسسة كفتارو للتسامح في الإمارات"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={najlaaMotaaa}
-                size="30vh"
-                paragraph="نجلاء المطوع"
-                brief="عضو في مجلس رائدات الأعمال الإماراتي"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={tamadur}
-                size="30vh"
-                paragraph="تماضر الفاتح"
-                brief="ماجستير في إدارة الأعمال"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                paragraph="د. فوزي الغزالي"
-                brief="دكتوراه في علوم اللسانيات من جامعة أكسفورد في بريطانيا "
-                category="رأي"
-                backgroundImage={Fawzi}
-                size="30vh"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                paragraph="د. محمود نور المنصوري"
-                brief="شاعر وكاتب إماراتي، مدير عام مجلس العويس الثقافي "
-                category="رأي"
-                backgroundImage={MahmoudNour}
-                size="30vh"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-            <Grid sx={{padding:"5px"}} item xs={12} md={3}>
-              <HeroCard
-                category="رأي"
-                backgroundImage={Saeedali}
-                size="30vh"
-                paragraph="د. سعيد يوسف آل علي"
-                brief="دكتور في الاقتصاد وعلوم الإدارة"
-                categoryColor="#FF5733"
-              />
-            </Grid>
-          
+
+
           </Grid>
 
-          
-         
+
+
         </Grid>
-       
+
       </Box>
     </Grid>
-   
+
 
 
   )

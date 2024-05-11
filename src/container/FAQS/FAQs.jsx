@@ -15,7 +15,9 @@ export default function FAQs() {
   };
 
   return (
-    <section className="faqs__section section__padding  " id="faqs">
+    <section style={{ padding: '100px 20px', 
+    justifyContent: 'center',
+    alignItems: 'center',}} className="faqs__section section__padding  " id="faqs">
       <h1 className="headtext__cormorant">FAQS</h1>
       <Container sx={{ paddingTop: "20px" , direction:'rtl'}}>
 
@@ -72,7 +74,7 @@ export default function FAQs() {
 
 
         >
-          متى سيتم إعلان الأسماء المرشحة للفوز
+          متى يتم إعلان عن الأسماء المرشحة للفوز
         </AccordionSummary>
         <AccordionDetails sx={{ color: "white", textAlign: "justify", fontFamily: "Oswald, sans-serif" }}>
           يتم إعلان الأسماء المرشحة للفوز سنوياً قبل العيد الوطني للإمارات بشهر سنوياً ويطرح الكتاب خلال معرض الشارقة للكتاب في نوفمبر من كل عام
@@ -91,7 +93,7 @@ export default function FAQs() {
         </AccordionSummary>
         <AccordionDetails sx={{ color: "white", textAlign: "justify", fontFamily: "Oswald, sans-serif" }}>
           يتم اعتماد المعايير الآتية لتحديد الفائزين
-          <ul>
+          <ul style={{marginRight:"50px"}}>
             <li>رجال الأعمال الذين أنشأوا في الإمارات شركات تجارية أو صناعية أو سياحية رائدة ظهرت نجاحاتها بشكل لافت</li>
             <li>الأكاديميون الذين خدموا الحقل الأكاديمي وحظوا بثناء المؤسسات العلمية والمعرفية في دولة الإمارات</li>
             <li>الأطباء والمهندسون المتميزون الذين قدموا خدمات استثنائية في حقول الخدمات الأساسية.</li>
@@ -113,7 +115,7 @@ export default function FAQs() {
         </AccordionSummary>
         <AccordionDetails sx={{ color: "white", textAlign: "justify", fontFamily: "Oswald, sans-serif" }}>
 
-          <ul>
+        <ul style={{marginRight:"50px"}}>
             <li>بسط قصص نجاحهم في كتاب خاص يصدر كل سنتين للتعريف بأهم 100 رائد تنموي </li>
             <li>التعريف بنجاحاتهم وبرامجهم وشركاتهم ومصانعهم عبر موقع 100 رائد في الإمارات</li>
             <li>تكريم الفائزين بحفل استثنائي يقام في مدينة الشارقة للنشر للتعريف بجهودهم وأعمالهم</li>
@@ -123,7 +125,8 @@ export default function FAQs() {
             <li>الطلب من القيادة الرشيدة رعاية هذا النشاط واعتباره أحد روافع العمل التنموي في الدولة</li>
 
           </ul>
-          كما يقدم المركز فرصة إصدار كتب مستقلة لمن يرغب من رواد التنمية في الإمارات
+<span style={{margin:"0 50px"}}>كما يقدم المركز فرصة إصدار كتب مستقلة لمن يرغب من رواد التنمية في الإمارات</span>
+          
         </AccordionDetails>
       </Accordion>
 

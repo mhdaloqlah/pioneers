@@ -11,10 +11,11 @@ import { RiVipDiamondFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
-import "./Footer.css";
 import FooterOverlay from "./FooterOverlay";
 import Logo from "../../../public/assets/logo.png";
-
+import "./Footer.css";
+import LogoFromSami from '../../../public/assets/DirasatLogo.png';
+import mhd2 from '../../../public/assets/mhd2.png';
 const Footer = () => (
   <div className="app__footer section__padding" id="login">
     <FooterOverlay />
@@ -28,7 +29,9 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_logo">
-        <img src={Logo} alt="footer_logo" />
+        {/* <img src={mhd2} alt="footer_logo" /> */}
+        <img src={LogoFromSami} style={{width:'200px'}} alt="footer_logo" />
+
         <p className="p__opensans">
           &quot;The best way to find yourself is to lose yourself in the service
           of others&quot;

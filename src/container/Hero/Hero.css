@@ -12,6 +12,10 @@
 
   margin-top: 5rem;
 }
+.headtext__cormorant{
+  margin-left: 0px;
+ 
+}
 .mask {
   /* position: absolute; */
   bottom: -70px;
@@ -40,10 +44,10 @@
 
 .BoxStyle {
   background-image: linear-gradient(
-    60deg,
+    55deg,
     hsl(42deg 41% 51%) 0%,
-    hsl(42deg 28% 35%) 12%,
-    hsl(43deg 14% 20%) 24%,
+    hsl(42deg 28% 35%) 10%,
+    hsl(43deg 14% 20%) 20%,
     hsl(0deg 0% 5%) 37%,
     hsl(0deg 0% 5%) 52%,
     hsl(0deg 0% 5%) 70%,
@@ -71,6 +75,7 @@
 
 .app__chef-sign img {
   width: 65%;
+ 
   /* filter: drop-shadow(10px 8px 6px red); */
 }
 
@@ -87,13 +92,17 @@
 
   .ImageHero {
     width: 100%;
-    top: 50px;
+bottom: 0;  }
+
+  .headtext__cormorant{
+    margin-left: 0px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 912px) {
   .ImageHero {
     width: 70%;
-    top: 70px;
+    /* top: 70px; */
   }
 }
 
@@ -101,7 +110,7 @@
   .ImageHero {
     width: 65%;
 
-    bottom: 190px;
+    bottom: 0;
   }
 }
 @media screen and (max-width: 1500px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../../../public/assets/Hero.png";
+import HeroImage from "../../../public/assets/00.png";
 import Hundred from "../../../public/assets/hundred.png";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -31,7 +31,7 @@ const Hero = () => {
         }}
       >
         <Grid item xs={12}>
-          <NavBar />
+        <NavBar/>
         </Grid>
         <Grid item xs={12} md={6}>
           <Box className="BoxStyle">
@@ -44,9 +44,10 @@ const Hero = () => {
               <span className="span__heading">Explore the</span> Top{" "}
               <span className="span__heading">100</span> Syrian Pioneers{" "}
               <span className="span__heading">In U</span>AE{" "}
+             
             </h1>
           </Item>
-          <Item>
+          <Item sx={{marginTop:'50px'}}>
             <div className="app__chef-sign">
               <Link
                 href="#"
@@ -60,6 +61,7 @@ const Hero = () => {
                   },
                 }}
               >
+               
                 <img src={Hundred} alt="sign_image" />
               </Link>
             </div>
